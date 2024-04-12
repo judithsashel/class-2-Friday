@@ -3,10 +3,10 @@
 
 -- Expected result: 61 rows, starting with
 --
-SELECT year, MAX (wins) FROM tesms
+SELECT year, MAX (wins) FROM teams
 Where year >= 1960
-GROUP BY year, 
-ORDERED BY Max (wins) DESC;
+GROUP BY year
+ORDER BY Max (wins) DESC;
 
 
 
