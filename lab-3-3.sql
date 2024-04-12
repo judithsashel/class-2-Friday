@@ -3,6 +3,13 @@
 
 -- Expected result: 61 rows, starting with
 --
+SELECT year, MAX (wins) FROM tesms
+Where year >= 1960
+GROUP BY year, 
+ORDERED BY Max (wins) DESC;
+
+
+
 -- +------+-------------------------------+-----------+
 -- | 2001 | Seattle Mariners              | 116       |
 -- | 1998 | New York Yankees              | 114       |
